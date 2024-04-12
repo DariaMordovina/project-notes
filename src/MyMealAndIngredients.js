@@ -1,4 +1,4 @@
-const MyMealAndIngredients =({selectedDay,updateDay})=>{
+const MyMealAndIngredients =({selectedDay,setSelectedDay,updateDay,setMealPlans, mealPlans})=>{
 
     const editMyMeal = (myinput,value)=>{
         updateDay({
@@ -6,11 +6,17 @@ const MyMealAndIngredients =({selectedDay,updateDay})=>{
             [myinput]:value
         })
     }
+
+const handleClose=()=>{
+     setSelectedDay(null);
+}
+
+
 if (!selectedDay) return <p> Планируйте свою неделю заранее!</p>
 
     return(
         <div className="whole-plan">
-            
+            <div>
 
 <input 
 type="text"
@@ -34,9 +40,9 @@ id="ingredients"
 value={selectedDay.ingredients}
 onChange = {(e) =>editMyMeal('ingredients',e.target.value)}
 />
-
+ <button className="btn-forma" onClick={handleClose}>Закрыть</button>
         
-          
+</div>
         </div>
     )
 }

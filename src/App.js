@@ -57,6 +57,9 @@ const getActiveMeal =()=>{
       <MyMealAndIngredients 
       selectedDay={getActiveMeal()}
       updateDay={updateDay}
+      mealPlans={mealPlans}
+      setMealPlans={setMealPlans}
+      setSelectedDay={setSelectedDay}
       />
     </div>
   );

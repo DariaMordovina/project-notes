@@ -34,8 +34,12 @@ h1{
 }
 
 .whole-plan{
-  width: 70%;
+  width: 50%;
   height: 100vh;
+}
+.notes{
+  width: 70%;
+ 
 }
 .myInput{
   font-family: "Montserrat", sans-serif;
@@ -59,9 +63,13 @@ textarea{
 }
 .selected{
   background-color: #fad106;
+  border-radius: 10px;
+ 
 }
 .default{
   background-color: #dcedf7;
+  border-radius: 10px;
+
 }
 p{
   color: #ffffff;
@@ -72,5 +80,19 @@ p{
   font-family: "Montserrat", sans-serif;
   color: black;
   font-size: 14px;
+  padding: 2px;
+  
+}
+.btn-forma{
+
+  margin-left: 35%;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 13px;
+  padding: 10px;
+  background-color: red;
+  color: #ffffff;
+  border: none;
+
   
 }
